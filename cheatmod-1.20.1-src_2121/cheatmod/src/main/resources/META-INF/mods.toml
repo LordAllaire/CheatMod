@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[dependencies.cheatmod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.2,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.cheatmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[mods]]
+modId="cheatmod"
+version="1.0.0"
+displayName="CheatMod"
+description='''
+A simple cheat menu mod for Forge 1.20.1.
+Press / to open the menu. Toggle fast mining and god mode (no damage).
+'''
