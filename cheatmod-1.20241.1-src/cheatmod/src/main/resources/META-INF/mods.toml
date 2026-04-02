@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mixins]]
+config="cheatmod.mixins.json"
+
+[[dependencies.cheatmod]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47.2,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.cheatmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[mods]]
+modId="cheatmod"
+version="1.0.0"
+displayName="CheatMod"
+description='''
+Cheat menu mod for Forge 1.20.1.
+Press / to open. Fast mine, god mode, x-ray, logoff spots and more.
+'''
