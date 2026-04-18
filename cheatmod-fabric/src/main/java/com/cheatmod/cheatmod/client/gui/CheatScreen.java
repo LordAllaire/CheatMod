@@ -103,7 +103,7 @@ public class CheatScreen extends Screen {
             MinecraftClient mc = MinecraftClient.getInstance();
             if (mc.player != null) {
                 close();
-                mc.setScreen(new CreativeInventoryScreen(mc.player, mc.player.networkHandler.getEnabledFeatures(), mc.options.getOperatorItemsTab()));
+                mc.setScreen(new CreativeInventoryScreen(mc.player, mc.player.networkHandler.getEnabledFeatures(), mc.options.operatorItemsTab().getValue()));
             }
         }).dimensions(col1, y, BTN_W * 2 + GAP, BTN_H).build()); y += BTN_H + GAP;
 
@@ -297,7 +297,8 @@ public class CheatScreen extends Screen {
         MinecraftClient mc = MinecraftClient.getInstance();
         if (mc.world == null) return;
         mc.world.getLevelProperties().setRaining(rain);
-        mc.world.getLevelProperties().setThundering(thunder);
+        mc.world.getLevelProperties().setRainTime(rain ? 6000 : 0);
+        mc.world.getLevelProperties().setThunderTime(thunder ? 6000 : 0);
         feedback(thunder ? "Thunder!" : rain ? "Raining" : "Clear skies");
     }
 
