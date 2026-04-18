@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.cheatmod.cheatmod.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": ["BlockRenderMixin"],
+  "mixins": [],
+  "injectors": { "defaultRequire": 1 }
+}
