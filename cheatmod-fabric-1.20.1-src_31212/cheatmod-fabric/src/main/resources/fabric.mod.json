@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "cheatmod",
+  "version": "1.0.0",
+  "name": "CheatMod",
+  "description": "Cheat menu for Fabric 1.20.1. Press / to open.",
+  "authors": ["cheatmod"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.cheatmod.cheatmod.CheatModClient"]
+  },
+  "mixins": ["cheatmod.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.20.1"
+  }
+}
